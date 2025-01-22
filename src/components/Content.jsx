@@ -5,10 +5,13 @@ import Calendar from "./Calendar"
 import Qoute from "./Qoute"
 const Content = () => {
   return (
-    <div>
-        <LatestNews/>
-        <Post/>
-        <Calendar/>
+    <div className='lg:gap-3 lg:mt-5'>
+        <div className='lg:grid grid-cols-3 place-content-center lg:w-5/6 m-auto gap-5'>
+          <LatestNews/>
+          <Post/>
+          <Calendar/>
+        </div>
+        
         <Qoute/>
     </div>
   )
