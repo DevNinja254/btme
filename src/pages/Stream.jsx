@@ -106,7 +106,7 @@ const Stream = () => {
         <div className={`${cartegory == "all" || cartegory == "sports" ? "block" : "hidden"} text-white`}>
         <div className="sm:rounded-md grid grid-cols-2 gap-2 my-3 bg-color" onClick={()=> {
           window.scrollTo({top:0, left:0, behavior:'smooth'})
-              setPlay("https://la12hd.com/vivo/canales.php?stream=espn2mx")
+              setPlay("https://techcabal.net/clip/s1.html")
               setTitle("РSG vs Mаnсhеstеr Сіty")
             setDescription("The channel will go live 30mins before the match")
             }}>
