@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.bgblue {
+    color: rgba(0, 25, 95, 0.979);
+}
+.colorblue {
+background-color: rgba(0, 25, 95, 0.979);
+}
+* {
+    box-sizing: border-box
+}
+#slideFig {
+  min-width: 100%;
+  height: 25vh;
+}
+*::-webkit-scrollbar {
+  width: 7px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.74);
+  border-radius: 10px;
+}
+#streamButtons {
+  overflow-x: scroll;
+}
+.scroller::-webkit-scrollbar #streamButtons::-webkit-scrollbar  {
+  width: 3px;
+}
+.scroller::-webkit-scrollbar-thumb #streamButtons::-webkit-scrollbar-thumb {
+  background-color: rgba(128, 128, 128, 0.50);
+  border-radius: 10px;
+}
+#streamButtons button {
+  background-color: rgba(37, 36, 36, 0.877);
+  color: rgb(196, 186, 186);
+  padding: 2px 9px;
+  margin-bottom: 0.5rem;
+  border-radius: 10px;
+}
+#streamButtons button:hover {
+  background-color: rgba(70, 68, 68, 0.877);
+  color: rgb(153, 149, 149);
+}
+.bg-color {
+  background-color: rgba(31, 31, 31, 0.596);
+}
+.streamImgCont {
+  height: 15vh;
+}
+
+.scroller h3 {
+  font-size: 14px;
+}
+.scroller .pr {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#playContainer {
+  background: gray;
+  height: 35vh;
+  border-radius:5px;
+  overflow: hidden;
+  color: white;
+}
+@media screen and (min-width: 500px) {
+  #playContainer {
+    height: 40vh;
+  }
+  
+ }
+
+
+@media screen and (min-width: 600px) {
+  #slideFig{
+    height: 50vh;
+  }
+  #playContainer {
+    height: 45vh;
+  }  
+  .streamImgCont {
+    height: 100%;
+  }
+  
+ }
+ @media screen and (min-width: 1000px) {
+  #slideFig{
+    height: 100vh;
+  }
+  #playContainer {
+    height: 55vh;
+  }  
+  
+ }
+
