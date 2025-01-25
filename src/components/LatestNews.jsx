@@ -1,16 +1,30 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { NavLink } from 'react-router-dom'
-import engine1 from "../assets/images/engine1.jpeg"
-import engine2 from "../assets/images/engine2.jpeg"
-import engine3 from "../assets/images/engine3.jpeg"
-import engine4 from "../assets/images/engine4.jpeg"
-import engine5 from "../assets/images/engine5.jpeg"
-import engine6 from "../assets/images/engine6.jpeg"
 
 const LatestNews = () => {
-  const slides = [engine1,engine2, engine3, engine4, engine5, engine6]
-  const description = "Claritas est etiam processus dynamicus, qui sequitur mutationem dsfjdfsdfafdsfsdfijsgflskgjsfgfsdgfnvjdjvfdgdf"
-  // const slider = 
+  const api_key = "8686d59426584f37b1d1c46134a5499c"
+    const url = `https://newsapi.org/v2/everything?q=mechanical engineering&pageSize=12&apiKey=${api_key}`
+    const [news, setNews] = useState(["loading News..."])
+    useEffect(() => {
+      fetch(url)
+      .then(res => (res.json()))
+      .then(data => {    
+        
+        let dats = []
+        let i = 0 
+        for (const dat of data.articles) {
+          if (dat.author && dat.urlToImage) {
+            dat.publishedAt = new Date(dat.publishedAt).toDateString()
+            dats.push(dat)
+          }
+          i += 1
+        }
+        setNews(dats)
+      })
+      .catch(error => {
+        setNews(error)
+      })
+    }, [])
   return (
    <div className="my-4 mx-2" >
     <h2 className="text-xl mb-2 font-mono text-gray-800 sticky top-0 bg-white">Latest News</h2>
@@ -19,19 +33,19 @@ const LatestNews = () => {
     overflowY: "scroll",
     overflowX: "hidden"
    }}>
-    {slides.map((slide, index) => (
-        <NavLink to="/" key={index} className="flex items-start justify-start gap-2 my-3 shadow-sm shadow-gray-300 py-1">
-        <figure className="w-36 object-cover block h-"><img src={slide}
+    {news.map((newz, index) => (
+        <NavLink to={newz.url} key={index} className="flex items-start justify-start gap-2 my-3 shadow-sm shadow-gray-300 py-1">
+        <figure className='h-full' ><img className="img6" src={require(newz.urlToImage)}
          width="240" height="170" alt={index} /></figure>
         <div>
-          <h3 className="font-mono  opacity-80">It Was My Best Experience </h3>
-          <p className='pr opacity-70'>{description.length < 50 ? description: `${description.slice(0, 50)}[...]`}</p>
+          <h3 className="font-mono  opacity-80">{newz.title}</h3>
+          <p className='pr opacity-70'>{String(newz.description).length < 50 ? newz.description: `${String(newz.description).slice(0, 50)}[...]`}</p>
         </div>
       </NavLink>
       ))}
     </div>
      
-    <NavLink href="/" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Latest News</NavLink>
+    <NavLink to="/news" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Latest News</NavLink>
    </div>
   )
 }
