@@ -7,6 +7,15 @@
 .colorblue {
 background-color: rgba(0, 25, 95, 0.979);
 }
+.textYellow {
+  color:rgb(249, 180, 2);
+}
+.bgYellow {
+  background-color:rgb(249, 180, 2);
+}
+.bYellow {
+  border-bottom:2px solid rgb(249, 180, 2);
+}
 * {
     box-sizing: border-box
 }
@@ -63,9 +72,53 @@ background-color: rgba(0, 25, 95, 0.979);
   overflow: hidden;
   color: white;
 }
+/* news Page styling start */
+.img, .img2 {
+  height: 40vh;
+} 
+.img img, .img2 img {
+  height: 100%;
+  object-fit: cover;
+} 
+.img3 {
+  min-width:150px;
+  max-width:150px;
+  height: 100%;
+  object-fit: cover;
+}
+.img6 {
+  min-width:150px;
+  min-width:150px;
+}
+.letter {
+  border:1px solid rgb(249, 180, 2);
+  display: flex ;
+  align-items: center;
+  justify-content: start;
+  border-radius: 5px;  
+}
+.letter input {
+  width: 100%;
+  padding: 6px;
+  font-size: 1.2rem;
+  outline: none
+}
+.letter button {
+  background-color: rgb(249, 180, 2);
+  height: 100%;
+  display: block;
+  padding: 6px;
+  font-size: 1.2rem;
+}
+/* news page styling ends */
 @media screen and (min-width: 500px) {
   #playContainer {
     height: 40vh;
+    object-fit: cover;
+  }
+  .img6 {
+    min-width:200px;
+    max-width:200px;
   }
   
  }
@@ -81,7 +134,12 @@ background-color: rgba(0, 25, 95, 0.979);
   .streamImgCont {
     height: 100%;
   }
-  
+   .img2 {
+    height: 30vh;
+  } 
+  .img {
+    height: 100%;
+  } 
  }
  @media screen and (min-width: 1000px) {
   #slideFig{
@@ -90,6 +148,11 @@ background-color: rgba(0, 25, 95, 0.979);
   #playContainer {
     height: 55vh;
   }  
-  
+  .img6 {
+    min-width:150px;
+    max-width:150px;
+    height:20vh;
+    object-fit: cover;
+  }
  }
 

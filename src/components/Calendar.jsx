@@ -1,5 +1,6 @@
 import React from 'react'
 import { CiLocationOn } from "react-icons/ci";
+import { NavLink } from 'react-router-dom';
 const Calendar = () => {
     const events = [1,2, 3, 4, 5]
     const Day = "MON"
@@ -37,7 +38,7 @@ const Calendar = () => {
             }
         </div>
         <div>
-            <a href="/" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Event Calendar</a>
+            <NavLink to="/events" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Event Calendar</NavLink>
         </div>
     </div>
   )

@@ -5,7 +5,7 @@ import Topbar from './Topbar';
 import { RxCross1 } from "react-icons/rx";
 import { FaGraduationCap } from "react-icons/fa6";
 import { MdOutlineMenuOpen } from "react-icons/md";
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 const NavSmall = () => {
     const reduced = "h-0 hidden"
     const expand = "h-fit opacity-100"
@@ -95,11 +95,11 @@ const NavSmall = () => {
             </div>
             <ul className="w-full colorblue px-4 pt-4 font-mono tracking-wider text-sky-100">
                 <li className="hover:text-sky-400 border-b-2 border-amber-700 hover:border-opacity-80
-                hover:cursor-pointer border-opacity-50 py-1"><Link to="/">HOME</Link></li>
+                hover:cursor-pointer border-opacity-50 py-1"><NavLink to="/">HOME</NavLink></li>
                 <li className="hover:text-sky-400 border-b-2 border-amber-700 hover:border-opacity-80
-                hover:cursor-pointer border-opacity-50 py-1"><a href="/about">ABOUT</a></li>
+                hover:cursor-pointer border-opacity-50 py-1"><NavLink to="/about">ABOUT</NavLink></li>
                 <li className="hover:text-sky-400 border-b-2 border-amber-700 hover:border-opacity-80
-                hover:cursor-pointer border-opacity-50 py-1"><a href="/about">SOLVING</a></li>
+                hover:cursor-pointer border-opacity-50 py-1"><NavLink to="/about">SOLVING</NavLink></li>
                 <li className="hover:text-sky-400 border-b-2 border-amber-700 hover:border-opacity-80
                 hover:cursor-pointer border-opacity-50 py-1">
                     <div className="flex items-center justify-start gap-3 border-gray-500 border-opacity-15 border-b-2" onClick={() => {
@@ -110,10 +110,10 @@ const NavSmall = () => {
                     </div>
                     <div className={true && exploreHeight}>
                         <ul className="px-4 py-1" id="explore">
-                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><Link to="/stream">Live Streaming</Link></li>
-                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/livestream">News</a></li>
-                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/livestream">Upcoming Events</a></li>
-                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500'><a href="/livestream">Blog</a></li>
+                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/stream">Live Streaming</NavLink></li>
+                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/news">News</NavLink></li>
+                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/events">Upcoming Events</NavLink></li>
+                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500'><NavLink to="/blog">Blog</NavLink></li>
                         </ul>
                     </div>
                 </li>
@@ -135,8 +135,8 @@ const NavSmall = () => {
                                     <Dropdown className="text-xl"/>
                                 </div>
                                 <ul className={true && assign}>
-                                    <li><a href="/pending">Pending</a></li>
-                                    <li><a href="Submitted"></a>Submitted</li>
+                                    <li><NavLink to="/pending">Pending</NavLink></li>
+                                    <li><NavLink to="Submitted"></NavLink>Submitted</li>
                                 </ul>
                             </li>
                             <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'>
@@ -147,12 +147,12 @@ const NavSmall = () => {
                                     <Dropdown className="text-xl"/>
                                 </div>
                                 <ul className={true && cat}>
-                                    <li><a href="/pending">Pending</a></li>
-                                    <li><a href="Submitted"></a>Submitted</li>
-                                    <li><a href="/pending">Awaiting</a></li>
+                                    <li><NavLink to="/pending">Pending</NavLink></li>
+                                    <li><NavLink to="Submitted"></NavLink>Submitted</li>
+                                    <li><NavLink to="/pending">Awaiting</NavLink></li>
                                 </ul>
                             </li>
-                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/livestream">Exams</a></li>
+                            <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/livestream">Exams</NavLink></li>
                         </ul>
                     </div>
                 </li>
@@ -165,11 +165,11 @@ const NavSmall = () => {
                         <Dropdown className="text-2xl"/>
                     </div>
                     <ul className={true && units}>
-                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/units/tmc4224">TMC 4224: MAT SCI & ENG II</a></li>
-                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/">Unit1</a></li>
-                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/">Unit1</a></li>
-                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/">Unit1</a></li>
-                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><a href="/">Unit1</a></li>
+                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tmc4224">TMC 4224: MAT SCI & ENG II</NavLink></li>
+                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
+                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
+                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
+                        <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
                     </ul>
                 </li>
                 <li class="hover:text-sky-400 border-b-2 border-amber-700 hover:border-opacity-80
@@ -181,12 +181,12 @@ const NavSmall = () => {
                         <Dropdown className="text-2xl"/>
                     </div>
                     <ul className={true && portal}>
-                        <li><a href="/">Tumis</a></li>
-                        <li><a href="/">E-Citizen</a></li>
-                        <li><a href="/">E-registra</a></li>
-                        <li><a href="/">Elearning</a></li>
-                        <li><a href="/">Href</a></li>
-                        <li><a href="/">TUM</a></li>
+                        <li><NavLink to="/">Tumis</NavLink></li>
+                        <li><NavLink to="/">E-Citizen</NavLink></li>
+                        <li><NavLink to="/">E-registra</NavLink></li>
+                        <li><NavLink to="/">Elearning</NavLink></li>
+                        <li><NavLink to="/">Href</NavLink></li>
+                        <li><NavLink to="/">TUM</NavLink></li>
                     </ul>
                 </li>
             </ul>

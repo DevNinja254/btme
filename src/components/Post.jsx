@@ -5,6 +5,7 @@ import engine3 from "../assets/images/engine3.jpeg"
 import engine4 from "../assets/images/engine4.jpeg"
 import engine5 from "../assets/images/engine5.jpeg"
 import engine6 from "../assets/images/engine6.jpeg"
+import { NavLink } from 'react-router-dom'
 
 
 const Post = () => {
@@ -29,8 +30,7 @@ const Post = () => {
                 }}>
             {slider}
             </div>
-            <a href="/" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Posts</a>
-        </div>
+            <NavLink to="/posts" className="bg-gray-500 block text-center py-1 bg-opacity-30 text-gray-800 font-serif text-md rounded-sm text-opacity-90">View All Posts</NavLink></div>
     )
 }
 

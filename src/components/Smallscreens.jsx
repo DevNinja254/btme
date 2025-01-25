@@ -6,7 +6,7 @@ import { HiOutlineMailOpen as Email} from "react-icons/hi";
 import { FaFacebook } from "react-icons/fa";
 import { FaYoutube as Youtube} from "react-icons/fa";
 import { FiPhoneCall as Call} from "react-icons/fi";
-import { MdOutlineMenuOpen } from "react-icons/md";
+import { NavLink } from 'react-router-dom';
 
 const Smallscreens = () => {
   // console.log(props.widt, "hello")
@@ -20,7 +20,7 @@ const Smallscreens = () => {
         <ul className='text-center'>
                 <li className='text-sky-200 py-1 font-mono tracking-wider hover:text-white transition-all duration-150 ease-linear '><a href="https://library.tum.ac.ke">Library Services</a></li>
                 <li className='text-sky-200 py-1 font-mono tracking-wider hover:text-white transition-all duration-150 ease-linear '><a href="https://journals.tum.ac.ke">TUM Journals</a></li>
-                <li className='text-sky-200 py-1 font-mono tracking-wider hover:text-white transition-all duration-150 ease-linear '><a href="livestream">Live Tv</a></li>
+                <li className='text-sky-200 py-1 font-mono tracking-wider hover:text-white transition-all duration-150 ease-linear '><NavLink to="/stream">Live Tv</NavLink></li>
         </ul> 
         {/* tum social media handles */}
         <div>

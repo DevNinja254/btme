@@ -1,9 +1,5 @@
 import React, {useState} from 'react'
 import { IoIosArrowDown as Dropdown } from "react-icons/io";
-import { IoIosArrowForward} from "react-icons/io";
-import Topbar from './Topbar';
-import { RxCross1 } from "react-icons/rx";
-import { FaGraduationCap } from 'react-icons/fa6';
 import { NavLink } from 'react-router-dom';
 const NavLarge = ({zIndex}) => {
     const reduced = "hidden"
