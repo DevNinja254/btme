@@ -7,6 +7,13 @@ import NotFound from "./pages/NotFound"
 import News from "./pages/News";
 import Blog from "./pages/Blog";
 import Post from "./pages/Post";
+import Cad from "./pages/units/Cad"
+import Economics from "./pages/units/Economics"
+import Solid from "./pages/units/Solid"
+import Statistics from "./pages/units/Statistics"
+import Fluid from "./pages/units/Fluid"
+import Thermo from "./pages/units/Thermo"
+import MecOfMachine from "./pages/units/MecOfMachine"
 
 function App() {
   return (
@@ -16,10 +23,17 @@ function App() {
         <Route path="/" element={<Homepage/>}/>
         <Route path="/stream" element={<Stream/>}></Route>
         <Route path="/units/tmc4224" element={<MaterialScience/>}></Route>
-        <Route path="*" element={<NotFound/>}></Route>
+        <Route path="/units/tmc4221" element={<Cad/>}></Route>
+        <Route path="/units/tmc4222" element={<MecOfMachine/>}></Route>
+        <Route path="/units/tmc4225" element={<Fluid/>}></Route>
+        <Route path="/units/tcu4223" element={<Solid/>}></Route>
+        <Route path="/units/ama4203" element={<Statistics/>}></Route>
+        <Route path="/units/tmc4226" element={<Thermo/>}></Route>
+        <Route path="/units/bfi4204" element={<Economics/>}></Route>
         <Route path="/news" element={<News/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/posts" element={<Post/>}></Route>
+        <Route path="*" element={<NotFound/>}></Route>
       </Routes>
     </BrowserRouter>
   );

@@ -110,7 +110,14 @@ background-color: rgba(0, 25, 95, 0.979);
   padding: 6px;
   font-size: 1.2rem;
 }
+
 /* news page styling ends */
+/* course styling start */
+.outlin {
+  height: 50vh;
+  overflow: hidden;
+}
+/* course styling ends */
 @media screen and (min-width: 500px) {
   #playContainer {
     height: 40vh;
