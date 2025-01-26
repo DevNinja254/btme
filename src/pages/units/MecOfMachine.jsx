@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import Nav from "../../pagesComponent/units/Nav"
-import CourseOutline from '../../pagesComponent/units/materialscience/CourseOutline'
-import Pdf from '../../pagesComponent/units/materialscience/Pdf'
-import Lab from '../../pagesComponent/units/materialscience/Lab'
-const MaterialScience = () => {
+import Pdf from '../../pagesComponent/units/mecofmachine/Pdf'
+import Lab from '../../pagesComponent/units/mecofmachine/Lab'
+import CourseOutline from '../../pagesComponent/units/mecofmachine/CourseOutline'
+const MecOfMachine = () => {
   const [labDiplay, setLabDisplay] = useState("hidden")
   const [notesDisplay, setNotesDisplay] = useState("block")
   const [text, setText] = useState("Lab")
@@ -44,4 +44,4 @@ const MaterialScience = () => {
   )
 }
 
-export default MaterialScience
+export default MecOfMachine

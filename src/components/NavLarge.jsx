@@ -126,10 +126,13 @@ const NavLarge = ({zIndex}) => {
                            </div>
                            <ul className={`${units} absolute top-full colorblue block w-fit -left-full min-w-full p-2 rounded-sm overflow-hiddden`}>
                                <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2 '><NavLink className="whitespace-nowrap" to="/units/tmc4224">TMC 4224: MAT SCI & ENG II</NavLink></li>
-                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
-                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
-                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
-                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/">Unit1</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tmc4221">TMC 4221: CAD</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tmc4222">TMC 4222: MEC OF MAC. II</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tmc4225">TMC 4225: FLUID MEC. II</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tcu4223">TCU 4223: SOLID & STRUC. II</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/ama4203">AMA 4203: STATISTICS</NavLink></li> 
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/tmc4226">TMC 4226: ENG. THERMO I</NavLink></li>
+                               <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/units/bfi4204">BFI 4204: ECO & ACC. ENG.</NavLink></li>
                            </ul>
                        </li>
                        <li class="relative hover:cursor-pointer py-1" onMouseEnter={()=>{
