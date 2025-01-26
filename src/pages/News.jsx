@@ -6,34 +6,12 @@ import engine from "../assets/images/engine0.jpeg"
 import { FaLocationArrow as Messager } from 'react-icons/fa'
 import { RiFacebookFill, RiTwitterFill, RiYoutubeFill } from 'react-icons/ri'
 import { DiGithubBadge, DiGithubFull } from 'react-icons/di'
+import data from "../assets/json/news.json"
 const News = () => {
-  const api_key = "8686d59426584f37b1d1c46134a5499c"
-  const url = `https://newsapi.org/v2/everything?q=mechanical engineering&pageSize=50&apiKey=${api_key}`
-  const [news, setNews] = useState(["loading News..."])
-  const [recentNews, setRecentNews] = useState({})
-  useEffect(() => {
-    fetch(url)
-    .then(res => (res.json()))
-    .then(data => {    
-      
-      let dats = []
-      let i = 0 
-      for (const dat of data.articles) {
-        if (dat.author && dat.urlToImage) {
-          dat.publishedAt = new Date(dat.publishedAt).toDateString()
-          if ( i == 7) {
-            setRecentNews(dat)
-          }
-          dats.push(dat)
-        }
-        i += 1
-      }
-      setNews(dats)
-    })
-    .catch(error => {
-      setNews(error)
-    })
-  }, [])
+  // const api_key = "8686d59426584f37b1d1c46134a5499c"
+  // const url = `https://newsapi.org/v2/everything?q=mechanical engineering&pageSize=50&apiKey=${api_key}`
+  const [news, setNews] = useState(data.news)
+  const recentNews = news[7]
   return (
     <div>
       <div className='bg-black bg-opacity-90 grid place-content-center gap-4 w-full py-3 text-slate-300 text-opacity-70 font-bold text-lg sm:flex sm:items-center sm:justify-between sm:px-5 '>
