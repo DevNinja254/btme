@@ -8,7 +8,11 @@ const CourseOutline = () => {
     <div>
         <h2 className='my-4 text-xl font-bold text-center'>Course Outline</h2>
         <div className=' m-3 shadow-md shadow-gray-600 p-4 rounded-sm'>
-      <p className='text-center text-lg font-mono capitalize'>No course outline  yet.</p>
+      <a href="https://drive.google.com/file/d/1jTFfqGKgReOIFqpP1uCXHzaiQ0VUqOV9/view?usp=sharing" target='_blank'>
+      <img src={require("../../../assets/images/units/mecofmac.png")} alt="" />
+      <p className='bg-gray-600 text-gray-100 text-center font-bold py-2'>Course Outline</p>      
+      </a>
+
     </div>
     </div>
   )

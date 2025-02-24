@@ -8,7 +8,10 @@ const CourseOutline = () => {
     <div>
         <h2 className='my-4 text-xl font-bold text-center'>Course Outline</h2>
         <div className=' m-3 shadow-md shadow-gray-600 p-4 rounded-sm'>
-      <p className='text-center text-lg font-mono capitalize'>No course outline  yet.</p>
+        <a href="https://drive.google.com/file/d/1V3AIpbACKkMUoiK96vvkzp6vgOkrjffQ/view?usp=sharing" target='_blank'>
+        <img src={require("../../../assets/images/units/thermo.png")}  className='unit' alt="" />
+        <p className='bg-gray-600 text-gray-100 text-center font-bold py-2 capitalize'>Thermal 1</p>      
+        </a>
     </div>
     </div>
   )
