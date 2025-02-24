@@ -34,6 +34,16 @@ const Pdf = () => {
                     <p className='text-lg capitalize font-bold'>Iron Carbon Equilibrium Diagram</p>
                     <a href={carbon} download="Iron Carbon Equilibrium Diagram"><Download size={24} className='text-sky-400'/></a>
                 </div>
+                <div>
+                    <a href="https://drive.google.com/file/d/1E-5IMdHa-VLrdRuJJy_M8NhLge_uKeKu/view?usp=sharing" target='_blank'>
+                        <img src={require("../../../assets/images/units/alloysteel.png")}  className='unit' alt="" />
+                        <p className='bg-gray-600 text-gray-100 text-center font-bold py-2 capitalize'>Alloy Steels Higgin materials</p>      
+                    </a>
+                    <a href="https://drive.google.com/file/d/1sZT2rbAdq6k7pLk8L26Xv-rzx0Uxfaoe/view?usp=sharing" target='_blank'>
+                        <img src={require("../../../assets/images/units/heattreat.png")}  className='unit' alt="" />
+                        <p className='bg-gray-600 text-gray-100 text-center font-bold py-2 capitalize'>Heat treatment process B</p>      
+                    </a>
+                </div>
             
             </div>
         </div>

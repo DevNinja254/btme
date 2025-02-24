@@ -81,8 +81,8 @@ const NavLarge = ({zIndex}) => {
                                            <Dropdown className="text-xl"/>
                                        </div>
                                        <ul className={`${assign} absolute top-0 colorblue bg-opacity-60 block w-fit left-full p-1 rounded-sm`}>
-                                           <li><NavLink className="p-1 hover:text-sky-300" to="/pending">Pending</NavLink></li>
-                                           <li><NavLink className="p-1 hover:text-sky-300" to="/pending">Submitted</NavLink></li>
+                                           <li><NavLink className="p-1 hover:text-sky-300" to="/course/assignments/pending">Pending</NavLink></li>
+                                           <li><NavLink className="p-1 hover:text-sky-300" to="/course/assignments/submited">Submitted</NavLink></li>
                                        </ul>
                                    </li>
                                    <li className='relative text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2' onMouseEnter={()=>{
@@ -99,12 +99,12 @@ const NavLarge = ({zIndex}) => {
                                            <Dropdown className="text-xl"/>
                                        </div>
                                        <ul className={`${cat} absolute top-0 colorblue block w-fit left-full p-1 rounded-sm`}>
-                                           <li><NavLink className="hover:text-sky-300 p-1" to="/pending">Pending</NavLink></li>
-                                           <li><NavLink className="hover:text-sky-300 p-1" to="/pending">Submitted</NavLink></li>
-                                           <li><NavLink className="hover:text-sky-300 p-1" to="/pending">Awaiting</NavLink></li>
+                                           <li><NavLink className="hover:text-sky-300 p-1" to="/course/cats/pending">Pending</NavLink></li>
+                                           <li><NavLink className="hover:text-sky-300 p-1" to="/course/cats/submited">Submitted</NavLink></li>
+                                           <li><NavLink className="hover:text-sky-300 p-1" to="/course/cats/awaiting">Awaiting</NavLink></li>
                                        </ul>
                                    </li>
-                                   <li className='text-sm text-sky-100 hover:text-sky-300 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/livestream">Exams</NavLink></li>
+                                   <li className='text-sm text-sky-100 hover:text-sky-300 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/course/exams">Exams</NavLink></li>
                                </ul>
                            </div>
                        </li>

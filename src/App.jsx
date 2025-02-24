@@ -14,6 +14,8 @@ import Statistics from "./pages/units/Statistics"
 import Fluid from "./pages/units/Fluid"
 import Thermo from "./pages/units/Thermo"
 import MecOfMachine from "./pages/units/MecOfMachine"
+import Pending from "./pages/assign/Pending";
+import Submited from "./pages/assign/Submited";
 
 function App() {
   return (
@@ -33,8 +35,12 @@ function App() {
         <Route path="/news" element={<News/>}></Route>
         <Route path="/blog" element={<Blog/>}></Route>
         <Route path="/posts" element={<Post/>}></Route>
+        <Route path="/course/assignments/pending" element={<Pending/>}></Route>
+        <Route path="/course/assignments/submited" element={<Submited/>}></Route>
+
         <Route path="*" element={<NotFound/>}></Route>
       </Routes>
+
     </BrowserRouter>
   );
 }

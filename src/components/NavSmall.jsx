@@ -135,8 +135,8 @@ const NavSmall = () => {
                                     <Dropdown className="text-xl"/>
                                 </div>
                                 <ul className={true && assign}>
-                                    <li><NavLink to="/pending">Pending</NavLink></li>
-                                    <li><NavLink to="Submitted"></NavLink>Submitted</li>
+                                    <li><NavLink to="/course/assignments/pending">Pending</NavLink></li>
+                                    <li><NavLink to="/course/assignments/submitted"></NavLink>Submitted</li>
                                 </ul>
                             </li>
                             <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'>
@@ -147,9 +147,9 @@ const NavSmall = () => {
                                     <Dropdown className="text-xl"/>
                                 </div>
                                 <ul className={true && cat}>
-                                    <li><NavLink to="/pending">Pending</NavLink></li>
-                                    <li><NavLink to="Submitted"></NavLink>Submitted</li>
-                                    <li><NavLink to="/pending">Awaiting</NavLink></li>
+                                    <li><NavLink to="/course/assignments/pending">Pending</NavLink></li>
+                                    <li><NavLink to="/course/assignments/submitted"></NavLink>Submitted</li>
+                                    <li><NavLink to="/course/assignments/awaiting">Awaiting</NavLink></li>
                                 </ul>
                             </li>
                             <li className='text-sm text-sky-300 hover:text-sky-100 transition-all ease-lineard duration-150 py-1 border-gray-500 border-opacity-10 border-b-2'><NavLink to="/livestream">Exams</NavLink></li>
